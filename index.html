@@ -1,404 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Interior Design Website</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Anime web</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fade-up">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Anime World</a>
-    <button class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse"
-         id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
-        </li>
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Anime</a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#" onclick="filterAnime('romance')">Romance</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#" onclick="filterAnime('action')">Action</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#" onclick="filterAnime('all')">All Anime</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <!-- Search -->
-      <form class="d-flex">
-        <input class="form-control me-2"
-               type="search"
-               placeholder="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<!-- HEADER -->
+
+<header class="header">
+
+  <a href="#" class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046857.png">
+  </a>
+
+  <nav>
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#service">services</a></li>
+      <li><a href="#project">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="fas fa-bars"></div>
+
+</header>
+
+<!-- HOME -->
+
+<section id="home" class="home">
+
+  <div class="hero">
+    <div>
+      <h1 class="text1">Interior Design</h1>
+      <h3 class="text2">Architecture Services</h3>
     </div>
   </div>
-</nav>
-<!-- Carousel -->
-<section class="banner-section">
-  <div id="carouselExampleControls"
-       class="carousel slide"
-       data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img.jpg/download (10).jpeg"
-             class="d-block w-100"
-             style="height:90vh; object-fit:cover;"
-             alt="Banner 1">
-      </div>
-      <div class="carousel-item">
-        <img src="img.jpg/download (9).jpeg"
-             class="d-block w-100"
-             style="height:90vh; object-fit:cover;"
-             alt="Banner 2">
-      </div>
-      <div class="carousel-item">
-        <img src="img.jpg/Anime.jpeg"
-             class="d-block w-100"
-             style="height:90vh; object-fit:cover;"
-             alt="Banner 3">
-     </div>
+
+  <div class="counting">
+
+    <div class="box">
+      <h1 class="count" data-count="1200">8+</h1>
+      <h3>working hours</h3>
     </div>
-    <!-- Previous Button -->
-    <button class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <!-- Next Button -->
-    <button class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
+
+    <div class="box">
+      <h1 class="count" data-count="15">10+</h1>
+      <h3>awards</h3>
+    </div>
+
+    <div class="box">
+      <h1 class="count" data-count="1000">25+</h1>
+      <h3>clients</h3>
+    </div>
+
+    <div class="box">
+      <h1 class="count" data-count="840">50+</h1>
+      <h3>projects</h3>
+    </div>
+
   </div>
+
 </section>
-<!-- Anime Cards -->
-<section class="service-section">
-  <div class="heading-section text-center p-4">
-    <h1>About Anime</h1>
-    <p>Anime is a style of animation that originated in Japanand is known for its storytelling and art style.</p>
-  </div>
-  <div class="container">
-    <div class="row g-4">
-      <!-- Card 1 -->
-      <div class="col-md-3 anime-card"
-           data-category="romance">
-        <div class="card h-100">
-          <img src="img.jpg/Alya Sometimes Hides Her Feelings In Russian.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Alya">
-          <div class="card-body">
-            <h5 class="card-title">Alya Sometimes Hides Her Feelings In Russian</h5>
-            <p class="card-text">A romantic comedy anime with wholesome moments.</p>
-            <a href="#"class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col-md-3 anime-card"
-           data-category="romance">
-        <div class="card h-100">
-          <img src="img.jpg/The Angel Next Door Spoils me Rotten - Visual.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Angel Next Door">
-          <div class="card-body">
-            <h5 class="card-title">The Angel Next Door</h5>
-            <p class="card-text">A sweet slice-of-life romance anime.</p>
-            <a href="#"class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-md-3 anime-card"
-           data-category="romance">
-        <div class="card h-100">
-          <img src="img.jpg/Surprisingly good_ Tonikawa_ Over the Moon for You returns for season 2.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Tonikawa">
-          <div class="card-body">
-            <h5 class="card-title">Tonikawa</h5>
-            <p class="card-text">A heartwarming newlywed anime series.</p>
-            <a href="#"class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 4 -->
-      <div class="col-md-3 anime-card"
-           data-category="romance">
-        <div class="card h-100">
-          <img src="img.jpg/Oshi no ko.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Oshi no Ko">
-          <div class="card-body">
-            <h5 class="card-title">Oshi no Ko</h5>
-            <p class="card-text">A dramatic anime about the idol industry.</p>
-            <a href="#" class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 5 -->
-      <div class="col-md-3 anime-card"
-           data-category="action">
-        <div class="card h-100">
-          <img src="img.jpg/Akame ga Kill! - Season 1.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Akame Ga Kill">
-          <div class="card-body">
-            <h5 class="card-title">Akame Ga Kill</h5>
-            <p class="card-text">A thrilling action anime with intense battles.</p>
-            <a href="#" class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 6 -->
-      <div class="col-md-3 anime-card"
-           data-category="romance">
-        <div class="card h-100">
-          <img src="img.jpg/Date A Live HD Wallpaper - Yoshino, Tohka, and More by Tammypain _ 1920x1080 _ Wallpaper Abyss.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Date A Live">
-          <div class="card-body">
-            <h5 class="card-title">Date A Live</h5>
-            <p class="card-text">A romantic action anime with supernatural elements.</p>
-            <a href="#"class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 7 -->
-      <div class="col-md-3 anime-card"
-           data-category="action">
-        <div class="card h-100">
-          <img src="img.jpg/The Eminence in Shadow - Season 1.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="The Eminence in Shadow">
-          <div class="card-body">
-            <h5 class="card-title">The Eminence in Shadow</h5>
-            <p class="card-text">A dark fantasy anime about a powerful Person Who has Lots of identities.</p>
-            <a href="#"class="btn btn-primary">Watch Now</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 8 -->
-      <div class="col-md-3 anime-card"data-category="action">
-        <div class="card h-100">
-          <img src="img.jpg/The Misfit of Demon King Academy_.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="The Misfit of Demon King Academy">
-          <div class="card-body">
-            <h5 class="card-title">The Misfit of Demon King Academy</h5>
-            <p class="card-text">A dark fantasy anime about a misfit demon king.</p>
-            <a href="#" class="btn btn-primary"> Watch Now</a>
-          </div>
-        </div>
-      </div>
-       <!-- Card 9 -->
-      <div class="col-md-3 anime-card"data-category="action">
-        <div class="card h-100">
-          <img src="img.jpg/solo leveling.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Solo Leveling">
-          <div class="card-body">
-            <h5 class="card-title">Solo Leveling</h5>
-            <p class="card-text">From weakest hunter to unstoppable force—he levels up alone.</p>
-            <a href="#" class="btn btn-primary"> Watch Now</a>
-          </div>
-        </div>
-      </div>
-       <!-- Card 10 -->
-      <div class="col-md-3 anime-card"data-category="action">
-        <div class="card h-100">
-          <img src="img.jpg/That Time I Got Reincarnated as a Slime.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="That Time I Got Reincarnated as a Slime">
-          <div class="card-body">
-            <h5 class="card-title">That Time I Got Reincarnated as a Slime</h5>
-            <p class="card-text">Reincarnated as a slime… destined to build a monster nation.</p>
-            <a href="#" class="btn btn-primary"> Watch Now</a>
-          </div>
-        </div>
-      </div>
-       <!-- Card 11 -->
-      <div class="col-md-3 anime-card"data-category="action">
-        <div class="card h-100">
-          <img src="img.jpg/download (4).jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Demon slayer">
-          <div class="card-body">
-            <h5 class="card-title">Demon slayer</h5>
-            <p class="card-text">A boy fights demons to save his sister and avenge his family.</p>
-            <a href="#" class="btn btn-primary"> Watch Now</a>
-          </div>
-        </div>
-      </div>
-       <!-- Card 12 -->
-      <div class="col-md-3 anime-card"data-category="romance">
-        <div class="card h-100">
-          <img src="img.jpg/I Want to Eat Your Pancreas.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="I Want to Eat Your Pancreas">
-          <div class="card-body">
-            <h5 class="card-title">I Want to Eat Your Pancreas</h5>
-            <p class="card-text">A quiet boy. A bright girl. A secret that changes everything.</p>
-            <a href="#" class="btn btn-primary"> Watch Now</a>
-          </div>
-        </div>
-      </div>
-       <!-- Card 13 -->
-      <div class="col-md-3 anime-card"data-category="romance">
-        <div class="card h-100">
-          <img src="img.jpg/Danjo no Yuujou wa Seiritsu suru_ (Iya, Shinai!!).jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Danjo no Yuujou wa Seiritsu suru">
-          <div class="card-body">
-            <h5 class="card-title">Danjo no Yuujou wa Seiritsu suru</h5>
-            <p class="card-text">A friendship tested by feelings neither of them fully admits.”</p>
-            <a href="#" class="btn btn-primary"> Watch Now</a>
-          </div>
-        </div>
-      </div>
-       <!-- Card 14 -->
-      <div class="col-md-3 anime-card"data-category="action">
-        <div class="card h-100">
-          <img src="img.jpg/download (5).jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Naruto">
-          <div class="card-body">
-            <h5 class="card-title">Naruto</h5>
-            <p class="card-text">A young ninja's dream to become the Hokage.</p>
-            <a href="#" class="btn btn-primary"> Watch Now</a>
-          </div>
-        </div>
-      </div>
-       <!-- Card 15 -->
-      <div class="col-md-3 anime-card"data-category="action">
-        <div class="card h-100">
-          <img src="img.jpg/The Demon Sword Master of Excalibur Academy Staffel 1 ger dub_.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="The Demon Sword Master of Excalibur Academy">
-          <div class="card-body">
-            <h5 class="card-title">The Demon Sword Master of Excalibur Academy</h5>
-            <p class="card-text">A demon king reborn in a future academy of sword and magic.</p>
-            <a href="#" class="btn btn-primary"> Watch Now</a>
-          </div>
-        </div>
-      </div>
-       <!-- Card 16 -->
-      <div class="col-md-3 anime-card"data-category="romance">
-        <div class="card h-100">
-          <img src="img.jpg/Boarding School Juliet_.jpeg"
-               class="card-img-top"
-               style="height:300px; object-fit:cover;"
-               alt="Boarding School Juliet">
-          <div class="card-body">
-            <h5 class="card-title">Boarding School Juliet</h5>
-            <p class="card-text">Love blooms between rivals who are meant to be enemies.</p>
-            <a href="#" class="btn btn-primary"> Watch Now</a>
-          </div>
-        </div>
-      </div>
+
+<!-- ABOUT -->
+
+<section id="about" class="about container">
+
+  <h1 class="heading">about us</h1>
+
+  <div class="row align-items-center">
+
+    <div class="col-md-6">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
     </div>
+
+    <div class="col-md-6 info">
+      <h2>Best Interior Design</h2>
+
+      <p>
+        We create modern and beautiful interiors for homes and offices.
+      </p>
+
+      <p>
+        Professional architecture and interior design services with modern creativity.
+      </p>
+
+      <div class="icons">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+    </div>
+
   </div>
+
 </section>
-<!-- Pagination -->
-<nav aria-label="...">
-  <ul class="pagination justify-content-center mt-5">
-    <li class="page-item disabled">
-      <a class="page-link"href="#">Previous</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link"href="#">1</a>
-    </li>
-    <li class="page-item active">
-      <a class="page-link"href="#">2</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link"href="#">3</a>
-    </li>
-    <li class="page-item">
-      <a class="page-link"href="#">Next</a>
-    </li>
-  </ul>
-</nav>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
-<!-- Filter Script -->
-<script>
-function filterAnime(category) {
-  let cards = document.querySelectorAll('.anime-card');
-  cards.forEach(function(card) {
-    if (category === 'all') {
-      card.style.display = 'block';
-    }
-    else if (card.dataset.category === category) {
-      card.style.display = 'block';
-    }
-    else {
-      card.style.display = 'none';
-    }
-  });
-}
-</script>
-<section class="about-section py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">About Us</h2>
-    <p class="text-center mb-5"> Welcome to our anime streaming platform! We are dedicatedto providing the best anime watching experience with a vast collection of shows and movies.</p>
-    <div class="row align-items-center">
-      <!-- Image Side -->
-      <div class="col-md-5">
-        <div class="about-img">
-          <img src="img.jpg/silent strength.jpeg" class="img-fluid rounded shadow"alt="Anime Image">
-        </div>
-      </div>
-      <!-- Text Side -->
-      <div class="col-md-7">
-        <div class="about-desc">
-          <h2 class="mb-4">Discover the World of Anime</h2>
-          <p>Anime is more than just animation — it is a unique form of storytelling that brings together emotions, creativity, imagination, and unforgettable adventures. Our platform is designed for anime fans who want to explore the incredible world of anime in one place. From heartwarming romance and emotional drama to action-packed battles, fantasy adventures, comedy, mystery, and slice-of-life stories, we provide content for every type of anime lover.</p>
-          <p>We believe anime has the power to inspire people, connect communities, and create unforgettable experiences. Every anime series tells a different story, introduces memorable characters, and delivers emotions that stay with viewers for a long time. Whether you enjoy exciting shonen fights, wholesome romance moments, powerful fantasy worlds, or relaxing everyday life stories, our website helps you discover anime that matches your interests and mood.</p>
-          <p>Our goal is to make anime discovery simple, enjoyable, and exciting for everyone. We carefully organize popular series, trending anime, and fan-favorite recommendations so users can easily explore new content. We also aim to create a user-friendly experience with a clean design, smooth browsing, and engaging anime collections that make visiting the site enjoyable for both new viewers and experienced anime fans.</p>
-        </div>
-      </div>
+
+<!-- SERVICES -->
+
+<section id="service" class="service">
+
+  <h1 class="heading">our services</h1>
+
+  <div class="box-container">
+
+    <div class="box">
+      <i class="fas fa-palette"></i>
+      <p>Creative interior designs for modern lifestyle.</p>
     </div>
+
+    <div class="box">
+      <i class="fas fa-tools"></i>
+      <p>Professional architecture and renovation services.</p>
+    </div>
+
+    <div class="box">
+      <i class="fas fa-house-user"></i>
+      <p>Luxury house planning and decorations.</p>
+    </div>
+
   </div>
-<div class="text-center mt-3">
-  <a href="#" class="btn btn-outline-primary">View More</a>
-</div>
+
+</section>
+
+<!-- PROJECT -->
+
+<section id="project" class="project">
+
+  <h1 class="heading">our projects</h1>
+
+  <div class="box-container">
+
+    <div class="box">
+      <a href="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+      </a>
+    </div>
+
+    <div class="box">
+      <a href="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+      </a>
+    </div>
+
+    <div class="box">
+      <a href="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+  <h1 class="heading">contact us</h1>
+
+  <div class="contact-box-container">
+
+    <div class="contact-box">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Bhaktapur, Nepal</h3>
+    </div>
+
+    <div class="contact-box">
+      <i class="fas fa-envelope"></i>
+      <h3>design@gmail.com</h3>
+    </div>
+
+    <div class="contact-box">
+      <i class="fas fa-phone"></i>
+      <h3>+91 9876543210</h3>
+    </div>
+
+  </div>
+
+  <div class="form-container">
+
+    <form>
+
+      <div class="inputBox">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+      </div>
+
+      <input type="email" placeholder="Email">
+
+      <textarea placeholder="Message"></textarea>
+
+      <input type="submit" value="Send">
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<section class="footer">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-3">
+        <h2>Interior Design</h2>
+        <p>Modern architecture and luxury interior services.</p>
+      </div>
+
+      <div class="col-md-3">
+        <h2>Locations</h2>
+        <div class="list">
+          <a href="#">Nepal</a>
+          <a href="#">India</a>
+          <a href="#">USA</a>
+          <a href="#">Japan</a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <h2>Follow Us</h2>
+        <div class="list">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <h2>Newsletter</h2>
+        <p>Subscribe for updates</p>
+        <input type="email" placeholder="Email">
+      </div>
+
+    </div>
+
+    <h1 class="credit">
+      created by <span>mr.Shido tokisaki</span> | all rights reserved
+    </h1>
+
+  </div>
+
+</section>
+<script src="script.js"></script>
+<!-- jQuery -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Magnific Popup -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
 </body>
 </html>
