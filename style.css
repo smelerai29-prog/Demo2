@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #b2c4cb;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ff4d6d !important;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #ff4d6d !important;
+}
+
+/* Banner / Carousel */
+.banner-section img {
+  border-radius: 0;
+}
+
+/* Section Headings */
+.heading-section h1 {
+  font-weight: 700;
+  color: #222;
+}
+
+.heading-section p {
+  color: #666;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Anime Cards */
+.anime-card .card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.anime-card .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #ff4d6d;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e63e5c;
+}
+
+.btn-outline-primary {
+  border-color: #ff4d6d;
+  color: #ff4d6d;
+}
+
+.btn-outline-primary:hover {
+  background-color: #ff4d6d;
+  color: #fff;
+}
+
+/* About Section */
+.about-section {
+  background-color: #b2c4cb;
+  margin-top: 40px;
+}
+
+.about-section h2 {
+  font-weight: 700;
+  color: #222;
+}
+
+.about-section p {
+  color: #555;
+  line-height: 1.8;
+}
+
+/* About Image */
+.about-img img {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.about-img img:hover {
+  transform: scale(1.03);
+}
+
+/* Pagination */
+.pagination .page-link {
+  color: #ff4d6d;
+}
+
+.pagination .active .page-link {
+  background-color: #ff4d6d;
+  border-color: #ff4d6d;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .anime-card {
+    margin-bottom: 20px;
+  }
+
+  .heading-section p {
+    padding: 0 15px;
+  }
+} 
